@@ -181,7 +181,7 @@ The server includes extensive debug logging. Enable with:
 #define DEBUG_VERBOSE 1  // Add to compiler flags or source
 ```
 
-## 📚 Documentation
+## Documentation
 
 ### Code Documentation
 - Document all public functions with Doxygen-style comments
@@ -193,7 +193,7 @@ The server includes extensive debug logging. Enable with:
 - Add new compilation instructions if needed
 - Update performance benchmarks
 
-## 🔍 Code Review Process
+## Code Review Process
 
 ### Pull Request Requirements
 - [ ] Code follows style guidelines
@@ -211,7 +211,7 @@ The server includes extensive debug logging. Enable with:
 - **Thread Safety**: Correct use of synchronization primitives?
 - **Error Handling**: Comprehensive error checking?
 
-## 🏗️ Architecture Guidelines
+## Architecture Guidelines
 
 ### Lock-Free Programming
 When modifying lock-free code:
