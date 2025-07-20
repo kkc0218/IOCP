@@ -1,0 +1,111 @@
+# Compiled executables
+*.exe
+*.out
+*.app
+
+# Object files
+*.o
+*.obj
+*.ko
+*.elf
+
+# Precompiled Headers
+*.gch
+*.pch
+
+# Libraries
+*.lib
+*.a
+*.la
+*.lo
+
+# Shared objects (inc. Windows DLLs)
+*.dll
+*.so
+*.so.*
+*.dylib
+
+# Debug information
+*.pdb
+*.ilk
+*.map
+
+# Visual Studio generated files
+*.vcxproj
+*.vcxproj.filters
+*.vcxproj.user
+*.sln
+*.suo
+*.ncb
+*.user
+*.userosscache
+*.sln.docstates
+
+# Visual Studio directories
+.vs/
+Debug/
+Release/
+x64/
+x86/
+
+# CMake generated files
+build/
+cmake-build-*/
+CMakeCache.txt
+CMakeFiles/
+cmake_install.cmake
+Makefile
+*.cmake
+!CMakeLists.txt
+
+# Code::Blocks
+*.cbp
+*.layout
+*.depend
+
+# Dev-C++
+*.dev
+
+# MinGW generated
+*.a
+*.def
+
+# Temporary files
+*.tmp
+*.temp
+*.log
+*.swp
+*.swo
+*~
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# IDE files
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# Runtime generated files
+core
+*.core
+*.stackdump
+
+# Test output
+test_output/
+logs/
+
+# Package files
+*.zip
+*.tar.gz
+*.rar
+
+# Configuration overrides (keep example config)
+config_local.txt
