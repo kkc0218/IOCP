@@ -1,0 +1,8 @@
+# IOCP Document Server Configuration
+# Format: docs_server = <IP> <Port>
+
+docs_server = 127.0.0.1 8080
+
+# Alternative configurations (uncomment to use):
+# docs_server = 0.0.0.0 8080        # Listen on all interfaces
+# docs_server = 192.168.1.100 9090  # Custom IP and port
