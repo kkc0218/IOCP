@@ -4,7 +4,7 @@ IOCP server / client
 
 A high-performance, scalable document management server built with Windows I/O Completion Ports (IOCP) and advanced concurrency techniques.
 
-## 🚀 Features
+##  Features
 
 - **High Performance**: Utilizes Windows IOCP for maximum throughput and minimal latency
 - **Lock-Free Concurrency**: Implements lock-free queues for write operations to eliminate contention
@@ -13,7 +13,7 @@ A high-performance, scalable document management server built with Windows I/O C
 - **Concurrent Writes**: Multiple clients can write to different sections simultaneously with proper ordering
 - **Memory Efficient**: Zero-copy operations where possible, efficient buffer management
 
-## 🏗️ Architecture Overview
+## Architecture Overview
 
 ### Core Components
 
@@ -85,7 +85,7 @@ struct ClientContext {
 };
 ```
 
-## 🛠️ Compilation
+## Compilation
 
 ### Prerequisites
 - Windows SDK
@@ -110,7 +110,7 @@ gcc client_iocp.c -o client_iocp.exe -lws2_32
 3. Add `ws2_32.lib` and `mswsock.lib` to Additional Dependencies
 4. Build in Release mode for optimal performance
 
-## 📖 Usage
+## Usage
 
 ### Server
 ```cmd
@@ -133,7 +133,7 @@ docs_server = 127.0.0.1 8080
 client_iocp.exe
 ```
 
-## 🎮 Command Examples
+## Command Examples
 
 ### 1. Create a Document
 ```
@@ -173,7 +173,7 @@ __END__
 [Disconnected]
 ```
 
-## 🔧 Advanced Features
+##  Advanced Features
 
 ### Concurrent Write Handling
 
@@ -203,7 +203,7 @@ Client C: write "Doc1" "Section2"  (3 lines)  - Executes immediately (different 
 - **Invalid Commands**: Proper error responses for malformed requests
 - **Resource Limits**: Built-in limits to prevent resource exhaustion
 
-## 📊 Performance Characteristics
+## Performance Characteristics
 
 ### Scalability
 - **Linear Scaling**: Performance scales with CPU core count
@@ -216,7 +216,7 @@ Client C: write "Doc1" "Section2"  (3 lines)  - Executes immediately (different 
 - **Memory Usage**: ~50MB for 1000 clients
 - **CPU Usage**: Scales linearly with workload
 
-## 🔬 Technical Deep Dive
+## Technical Deep Dive
 
 ### IOCP Advantages
 1. **Kernel-Level Efficiency**: Direct kernel notification of I/O completion
@@ -244,7 +244,7 @@ void EnqueueWrite(LockFreeQueue* queue, ClientContext* client, int estimatedLine
 - **Zero-Copy**: Initial data can be received with the accept
 - **Automatic Scaling**: New accepts are posted immediately after completion
 
-## 🚨 Important Notes
+## Important Notes
 
 ### Windows-Specific Features
 - **IOCP**: Windows-only technology (no direct Linux equivalent)
@@ -265,7 +265,7 @@ void EnqueueWrite(LockFreeQueue* queue, ClientContext* client, int estimatedLine
 - **Client State**: Protected by per-client critical sections
 - **Write Queues**: Lock-free implementation for maximum performance
 
-## 🐛 Troubleshooting
+## Troubleshooting
 
 ### Common Issues
 
@@ -292,11 +292,11 @@ Enable detailed logging by compiling with debug symbols and checking console out
 cl server_iocp.c /Zi /DEBUG /link ws2_32.lib mswsock.lib
 ```
 
-## 📜 License
+## License
 
 This project is released under the MIT License. See LICENSE file for details.
 
-## 🤝 Contributing
+## Contributing
 
 Contributions are welcome! Areas for improvement:
 - Linux port using epoll
@@ -305,7 +305,7 @@ Contributions are welcome! Areas for improvement:
 - Enhanced error handling
 - Metrics and monitoring
 
-## 📚 References
+## References
 
 - [I/O Completion Ports - Microsoft Docs](https://docs.microsoft.com/en-us/windows/win32/fileio/i-o-completion-ports)
 - [AcceptEx Function - Microsoft Docs](https://docs.microsoft.com/en-us/windows/win32/api/mswsock/nf-mswsock-acceptex)
